@@ -4,7 +4,7 @@ test('Check about page', async ({ page }) => {
   await page.goto('http://localhost:8090/about');
   const heading = await page.$('h1');
   const text = await heading.textContent();
-  expect(text).toBe('About');
+  expect(text).toBe('About Petya');
 });
 
 test('Check about page test', async ({ page }) => {
